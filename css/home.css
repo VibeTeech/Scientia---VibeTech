@@ -55,3 +55,11 @@ body {
 ul.list-unstyled.mt-4 li {
   cursor: pointer;
 }
+
+ul.list-unstyled.mt-4 li:hover {
+  background-color: #7C6F82 ;
+}
+
+ul.list-unstyled.mt-4 li:active {
+  background-color: #554c58;
+}
