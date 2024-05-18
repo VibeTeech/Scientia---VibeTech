@@ -51,3 +51,7 @@ body {
   margin-bottom: 10px;
   border-radius: 8px;
 }
+
+ul.list-unstyled.mt-4 li {
+  cursor: pointer;
+}
