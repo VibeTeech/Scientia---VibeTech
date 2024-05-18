@@ -30,18 +30,6 @@ body {
   width: 100%;
 }
 
-.border {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 16px;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  height: 50vh;
-  background-color: #4A3355 !important;
-}
-
 .selector h3 {
   text-align: center;
   color: #FFFFFF;
@@ -50,6 +38,16 @@ body {
   font-weight: 600;
 }
 
-.border ul li {
+.border {
   color: #FFFFFF;
+  background-color: #331E3B;
+}
+
+.list-unstyled li {
+  border: none;
+  background-color: #331E3B;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
