@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-content {
+    flex-direction: column;
+    background-color: #4A3355;
+    color: white;
+    border-radius: 8px;
+}
+
+.modal-content h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-footer button {
+  background-color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4A3355;
+  width: 63px;
+  height: 39px;
+}
+
+.modal-footer button:hover, 
+.modal-footer button:focus,
+.modal-footer button:active{
+  background-color: #a86ec4;
+}
