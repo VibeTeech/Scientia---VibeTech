@@ -2,7 +2,7 @@
 
 
 // BOTÃO APÓS SELECIONAR A DISCIPLINA QUE DESEJA REALZIAR
-const botaoContinuar = document.getElementById('botao-sim');
+const botaoContinuar = document.getElementById('botaoSim');
 
 // EVENTO AO CLICAR
 botaoSim.addEventListener('click', function() {
