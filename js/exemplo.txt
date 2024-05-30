@@ -1,0 +1,78 @@
+//EXEMPLO DE COMO ELABORAR AS PERGUNTAS
+
+// let questions = [
+//     {
+//       question: "What is the capital of France?",
+//       answers: ["Paris", "London", "Rome", "Madrid"],
+//       correctAnswer: 0
+//     },
+//     {
+//       question: "Who is the president of the United States?",
+//       answers: ["Donald Trump", "Joe Biden", "Barack Obama", "George Washington"],
+//       correctAnswer: 1
+//     },
+//     {
+//       question: "What is the largest planet in our solar system?",
+//       answers: ["Jupiter", "Saturn", "Mars", "Earth"],
+//       correctAnswer: 0
+//     },
+//     {
+//       question: "What is the smallest country in the world?",
+//       answers: ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
+//       correctAnswer: 0
+//     }
+//   ];
+  
+// Função para exibir as perguntas e respostas
+
+// function displayQuestion() {
+//     let question = questions[currentQuestion];
+//     let questionEl = document.getElementById("question");
+//     questionEl.textContent = question.question;
+  
+//     let answersEl = document.getElementById("answers");
+//     answersEl.innerHTML = "";
+  
+//     for (let i = 0; i < question.answers.length; i++) {
+//       let answer = document.createElement("input");
+//       answer.type = "radio";
+//       answer.name = "answer";
+//       answer.value = i;
+//       answer.id = "answer" + i;
+  
+//       let label = document.createElement("label");
+//       label.htmlFor = "answer" + i;
+//       label.textContent = question.answers[i];
+  
+//       answersEl.appendChild(answer);
+//       answersEl.appendChild(label);
+//       answersEl.appendChild(document.createElement("br"));
+//     }
+//   }
+  
+// Função para verificar a resposta
+//   function checkAnswer() {
+//     let selectedAnswer = document.querySelector('input[name="answer"]:checked').value;
+//     if (selectedAnswer == questions[currentQuestion].correctAnswer) {
+//       score++;
+//     }
+//     currentQuestion++;
+//     if (currentQuestion < questions.length) {
+//       displayQuestion();
+//     } else {
+//       showScore();
+//     }
+//   }
+  
+//   // Function to show the score
+//   function showScore() {
+//     let scoreEl = document.getElementById("score");
+//     scoreEl.textContent = "Your score is: " + score;
+//   }
+  
+//   // Inicializando as variavies
+//   let currentQuestion = 0;
+//   let score = 0;
+  
+//   // Exibir a primeira questão
+//   displayQuestion();
