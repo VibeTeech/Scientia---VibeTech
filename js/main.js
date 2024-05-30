@@ -5,9 +5,9 @@
 const botaoContinuar = document.getElementById('botao-sim');
 
 // EVENTO AO CLICAR
-botao-sim.addEventListener('click', function() {
+botaoSim.addEventListener('click', function() {
     // PAGINA DE PERGUNTAS
-    const novaPagina = " ";
+    const novaPagina = "https://www.google.com.br/?hl=pt-BR";
     
     window.location.href = novaPagina;
 });
