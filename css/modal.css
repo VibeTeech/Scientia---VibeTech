@@ -11,8 +11,8 @@
 
 .modal-content {
     flex-direction: column;
-    background-color: #4A3355;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(14, 14, 14);
     border-radius: 8px;
 }
 
@@ -25,7 +25,7 @@
   background-color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
-  color: #4A3355;
+  color: #2b2b2b;
   width: 63px;
   height: 39px;
 }
@@ -33,5 +33,5 @@
 .modal-footer button:hover, 
 .modal-footer button:focus,
 .modal-footer button:active{
-  background-color: #a86ec4;
+  background-color: #747474;
 }
