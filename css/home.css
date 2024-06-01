@@ -20,11 +20,11 @@
 
 body {
   font-size: 1.6rem;
-  background-color: #282828;
+  background-color: #ffffff;
 }
 
 .titulo p {
-  color: #FFFFFF;
+  color: #7E33B7;
   text-align: center;
   font-size: 64px;
   font-style: normal;
@@ -44,26 +44,26 @@ body {
 
 .border {
   color: #FFFFFF;
-  background-color: #331E3B;
+  background-color: #7E33B7;
 }
 
 .list-unstyled li {
   border: none;
-  background-color: #331E3B;
+  background-color: #7E33B7;
   color: white;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
 
-ul.list-unstyled.mt-4 li {
+ul.list-unstyled.mt-5 li {
   cursor: pointer;
 }
 
-ul.list-unstyled.mt-4 li:hover {
-  background-color: #7C6F82 ;
+ul.list-unstyled.mt-5 li:hover {
+  background-color: #702ea3 ;
 }
 
-ul.list-unstyled.mt-4 li:active {
-  background-color: #554c58;
+ul.list-unstyled.mt-5 li:active {
+  background-color: #a545e9;
 }
