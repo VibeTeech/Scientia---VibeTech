@@ -9,6 +9,7 @@ itensLista.forEach(function(item) {
         let guardaDisciplina = item.innerText;
         console.log(guardaDisciplina);
     });
+    guardaDisciplina = itensLista;
 });
 
 // BOTÃO APÓS SELECIONAR A DISCIPLINA QUE DESEJA REALZIAR
@@ -17,9 +18,16 @@ const botaoContinuar = document.getElementById('botaoSim');
 // EVENTO AO CLICAR
 botaoSim.addEventListener('click', function() {
     // PAGINA DE PERGUNTAS
-    const novaPagina = "https://www.google.com.br/?hl=pt-BR";
-    
-    window.location.href = novaPagina;
-});
+    const novaPagina = guardaDisciplina;    
+    // SELECIONAR O BANCO DE QUESTÕES DA DISCIPLINA SE
+    if(guardaDisciplina == "Inglês"){
+        window.location.href = novaPagina;
 
+    } else if(guardaDisciplina == "Geoagrafia"){
+        window.location.href = novaPagina;
+
+    } else {
+        window.location.href = novaPagina;
+    }
+});
 
