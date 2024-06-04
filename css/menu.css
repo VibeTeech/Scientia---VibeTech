@@ -45,6 +45,8 @@ body {
 .border {
   color: #FFFFFF;
   background-color: #7E33B7;
+  position: relative;
+  top: 5rem;
 }
 
 .list-unstyled li {
