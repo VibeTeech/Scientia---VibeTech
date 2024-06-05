@@ -9,7 +9,12 @@
   font-family: "Inter", sans-serif;
 }
 
-.titulo p {
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.titulo-home p {
   color: #7E33B7;
   text-align: center;
   font-size: 64px;
@@ -20,19 +25,19 @@
   width: 100%;
 }
 
-.image {
+.image-home {
   display: grid;
   place-items: center;
   width: 100%;
   height: 300px;
 }
 
-.image img {
+.image-home img {
   width: 18rem;
   height: 18rem;
 }
 
-.container {
+.container-home {
   display: grid;
   flex-direction: column;
   position: relative;
@@ -41,7 +46,7 @@
   gap: 5rem
 }
 
-.container .btn {
+.container-home .btn {
     width: 210px;
     background-color: #7E33B7;
     color: white;
@@ -54,6 +59,6 @@
     line-height: normal;
 }
 
-.container .btn:hover {
+.container-home .btn:hover {
   background-color: #532377;
 }

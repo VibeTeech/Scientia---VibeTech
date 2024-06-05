@@ -9,7 +9,12 @@
   font-family: "Inter", sans-serif;
 }
 
-.image img {
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.image-menu img {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -18,12 +23,7 @@
   height: 18rem;
 }
 
-body {
-  font-size: 1.6rem;
-  background-color: #ffffff;
-}
-
-.titulo p {
+.titulo-menu p {
   color: #7E33B7;
   text-align: center;
   font-size: 64px;
@@ -42,7 +42,7 @@ body {
   font-weight: 600;
 }
 
-.border {
+.border-menu {
   color: #FFFFFF;
   background-color: #7E33B7;
   position: relative;
