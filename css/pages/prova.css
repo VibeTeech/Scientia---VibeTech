@@ -33,3 +33,48 @@ body {
   top: 5rem;
   width: 100%;
 }
+
+.border-prova {
+  color: #FFFFFF;
+  background-color: #7E33B7;
+  position: relative;
+  top: 15rem;
+}
+
+.seletor-prova {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quiz-card {
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.quiz-card .form-check-label {
+  font-size: 1.2em;
+}
+
+.card-title h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+form {
+  background-color: #7E33B7;
+  position: relative;
+  top: 2rem;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-check {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
