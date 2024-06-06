@@ -76,3 +76,50 @@
   
 //   // Exibir a primeira questão
 //   displayQuestion();
+
+// EXEMPLO CONTADOR
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador de Pontos</title>
+</head>
+<body>
+
+<h2>Pergunta 1</h2>
+<p>Qual é a capital do Brasil?</p>
+
+<input type="radio" name="pergunta1" value="errado"> São Paulo<br>
+<input type="radio" name="pergunta1" value="errado"> Rio de Janeiro<br>
+<input type="radio" name="pergunta1" value="correto"> Brasília<br>
+
+<button onclick="verificarRespostas()">Verificar Resposta</button>
+
+<p>Pontuação: <span id="pontuacao">0</span></p>
+
+<script>
+  var pontuacao = 0;
+
+  function verificarRespostas() {
+    var respostas = document.getElementsByName("pergunta1");
+    var respostaCorreta = false;
+
+    for (var i = 0; i < respostas.length; i++) {
+      if (respostas[i].checked && respostas[i].value === "correto") {
+        respostaCorreta = true;
+        break;
+      }
+    }
+
+    if (respostaCorreta) {
+      pontuacao++;
+      document.getElementById("pontuacao").innerHTML = pontuacao;
+      alert("Resposta correta! Sua pontuação aumentou para " + pontuacao);
+    } else {
+      alert("Resposta incorreta! Tente novamente.");
+    }
+  }
+</script>
+
+</body>
+</html>
