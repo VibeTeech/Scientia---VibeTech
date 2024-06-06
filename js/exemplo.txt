@@ -123,3 +123,26 @@
 
 </body>
 </html>
+
+
+//EXEMPLO VALIDAÇÃO DA CONTA
+
+function validarConta() {
+    var conta = document.getElementById("conta").value;
+
+    // Verifica se o campo está vazio
+    if (conta === "") {
+      document.getElementById("resultado").innerHTML = "Por favor, digite sua conta.";
+      return;
+    }
+
+    // Verifica se o formato da conta é válido (por exemplo, se tem pelo menos 6 caracteres)
+    if (conta.length < 6) {
+      document.getElementById("resultado").innerHTML = "A conta deve ter pelo menos 6 caracteres.";
+      return;
+    }
+
+    // Se passou pelas verificações, considera a conta como válida
+    document.getElementById("resultado").innerHTML = "Conta válida: " + conta;
+  }
+</script>
