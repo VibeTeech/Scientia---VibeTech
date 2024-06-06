@@ -146,3 +146,59 @@ function validarConta() {
     document.getElementById("resultado").innerHTML = "Conta válida: " + conta;
   }
 </script>
+
+
+// EXEMPLO VALIDAÇÃO DE CONTA E SUMBLINHAR UMA OPÇÃO
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Conta Matemática</title>
+    <style>
+        .option {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .correct {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Resolva a conta matemática</h2>
+    <p>Qual é o resultado de 3 + 4?</p>
+    <div>
+        <span class="option" id="option1">6</span>
+        <span class="option" id="option2">7</span>
+        <span class="option" id="option3">8</span>
+    </div>
+    <form id="mathForm">
+        <label for="answer">Insira sua resposta:</label>
+        <input type="text" id="answer" name="answer">
+        <button type="button" onclick="validateMath()">Validar</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+function validateMath() {
+    var answer = document.getElementById('answer').value;
+    var resultElement = document.getElementById('result');
+    var correctAnswer = 7; // A resposta correta para 3 + 4
+
+    if (parseInt(answer) === correctAnswer) {
+        resultElement.textContent = 'Resposta correta!';
+        resultElement.style.color = 'green';
+
+        // Sublinhando a opção correta
+        document.getElementById('option2').classList.add('correct');
+    } else {
+        resultElement.textContent = 'Resposta incorreta. Tente novamente.';
+        resultElement.style.color = 'red';
+    }
+}
