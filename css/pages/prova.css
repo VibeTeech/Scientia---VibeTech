@@ -47,15 +47,21 @@ body {
   font-weight: 700;
 }
 
+.card-body {
+  margin-bottom:initial;
+}
+
 .quiz-card {
   background-color: #6a0dad;
   color: white;
   border-radius: 10px;
-  padding: 2rem;
+  top: 12rem;
+  padding: 2  rem;
 }
 
 .quiz-card .form-check-label {
   font-size: 1.2em;
+  display: block;
 }
 
 .card-title h3 {
@@ -67,7 +73,6 @@ body {
 form {
   background-color: #7E33B7;
   position: relative;
-  top: 2rem;
   border-radius: 5px;
   padding: 2rem;
   margin-bottom: 1rem;
