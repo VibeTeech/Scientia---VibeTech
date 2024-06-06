@@ -46,22 +46,27 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-
-.card-body {
-  margin-bottom:initial;
-}
-
 .quiz-card {
   background-color: #6a0dad;
+  place-items: center;
+  position: relative;
   color: white;
   border-radius: 10px;
+  width: 130rem;
   top: 12rem;
-  padding: 2  rem;
 }
 
 .quiz-card .form-check-label {
   font-size: 1.2em;
   display: block;
+}
+
+.card-body {
+    place-items: center;
+    width: 130rem;
+    height: 22rem;
+    position: relative;
+    color: white;
 }
 
 .card-title h3 {
@@ -73,13 +78,25 @@ body {
 form {
   background-color: #7E33B7;
   position: relative;
+  place-items: center;
   border-radius: 5px;
   padding: 2rem;
+  height: 15rem;
   margin-bottom: 1rem;
 }
 
 .form-check {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
+  display: block;
+  top: 1rem;
+  position: relative;
+}
+
+.form-check-input:checked {
+  background-color: #A3E635;
+}
+
+.form-check-input {
+  background-color: transparent;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
 }
