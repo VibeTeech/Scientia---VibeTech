@@ -109,16 +109,16 @@ form {
   align-items: center;
 }
 
-.respondidas .btn-success {
+.respondidas .badge-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 282px;
   height: 56px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
   background-color: #a1e72f;
   opacity: 1;
-  border-color: transparent;
-  border-radius: 15px;
-  color: #000000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-
 }
