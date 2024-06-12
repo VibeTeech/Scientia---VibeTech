@@ -122,3 +122,30 @@ form {
   background-color: #a1e72f;
   opacity: 1;
 }
+
+
+@media (min-width: 700px) {
+  .card {
+    display: flex;
+    place-items: center;
+    width: 120rem;
+    height: 20rem;
+    position: relative;
+    color: white;
+}
+
+.card-body {
+  display: block;
+  place-items: center;
+  width: 122rem;
+  height: 20rem;
+  color: white;
+}
+
+.rounded-circle {
+  display: flex;
+  border-radius: 50% !important;
+  width: 30px; 
+  height: 30px;
+}
+}
