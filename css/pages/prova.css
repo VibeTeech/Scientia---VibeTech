@@ -63,7 +63,7 @@ body {
 
 .card-body {
     place-items: center;
-    width: 130rem;
+    width: 125rem;
     height: 22rem;
     position: relative;
     color: white;
@@ -91,12 +91,34 @@ form {
   position: relative;
 }
 
-.form-check-input:checked {
-  background-color: #A3E635;
-}
-
 .form-check-input {
   background-color: transparent;
   margin-right: 10px;
   transition: background-color 0.3s ease;
+  border-color: #A3E635;
+}
+
+.form-check-input:checked {
+  background-color: #A3E635;
+  border-color: #A3E635;
+}
+
+.respondidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.respondidas .btn-success {
+  width: 282px;
+  height: 56px;
+  background-color: #a1e72f;
+  opacity: 1;
+  border-color: transparent;
+  border-radius: 15px;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+
 }
