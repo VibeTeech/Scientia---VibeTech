@@ -148,4 +148,16 @@ form {
   width: 30px; 
   height: 30px;
 }
+
+  .titulo-prova p {
+    color: #7E33B7;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+  }
+
 }
