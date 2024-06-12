@@ -70,6 +70,7 @@ body {
 }
 
 .card-title h3 {
+  display: block;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -121,6 +122,12 @@ form {
   color: #000000;
   background-color: #a1e72f;
   opacity: 1;
+}
+
+.rounded-circle {
+  width: 20px; 
+  height: 20px; 
+  background-color: #A167C9;
 }
 
 
