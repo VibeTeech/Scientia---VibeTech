@@ -55,7 +55,6 @@ body {
   width: 130rem;
   top: 12rem;
 }
-
 .quiz-card .form-check-label {
   font-size: 1.2em;
   display: block;
@@ -69,11 +68,25 @@ body {
     color: white;
 }
 
-.card-title h3 {
+.rounded-circle {
   display: block;
-  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  left: 0.5rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #A167C9;
+}
+
+.card-body h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: static;
+  font-size: 19px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 form {
@@ -124,13 +137,6 @@ form {
   opacity: 1;
 }
 
-.rounded-circle {
-  width: 20px; 
-  height: 20px; 
-  background-color: #A167C9;
-}
-
-
 @media (min-width: 700px) {
   .card {
     display: flex;
@@ -147,13 +153,6 @@ form {
   width: 122rem;
   height: 20rem;
   color: white;
-}
-
-.rounded-circle {
-  display: flex;
-  border-radius: 50% !important;
-  width: 30px; 
-  height: 30px;
 }
 
   .titulo-prova p {
