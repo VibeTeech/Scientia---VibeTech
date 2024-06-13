@@ -34,18 +34,6 @@ body {
   width: 100%;
 }
 
-.border-prova {
-  color: #FFFFFF;
-  background-color: #7E33B7;
-  position: relative;
-  top: 15rem;
-}
-
-.seletor-prova {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-}
 .quiz-card {
   background-color: #6a0dad;
   place-items: center;
@@ -55,17 +43,18 @@ body {
   width: 130rem;
   top: 12rem;
 }
+
 .quiz-card .form-check-label {
   font-size: 1.2em;
   display: block;
 }
 
 .card-body {
-    place-items: center;
-    width: 125rem;
-    height: 22rem;
-    position: relative;
-    color: white;
+  place-items: center;
+  width: 125rem;
+  height: 22rem;
+  position: relative;
+  color: white;
 }
 
 .rounded-circle {
@@ -83,7 +72,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  position: static;
   font-size: 19px;
   font-style: normal;
   font-weight: 600;
@@ -101,8 +89,8 @@ form {
 
 .form-check {
   display: block;
-  top: 1rem;
   position: relative;
+  top: 1rem;
 }
 
 .form-check-input {
@@ -134,36 +122,20 @@ form {
   font-weight: 700;
   color: #000000;
   background-color: #a1e72f;
-  opacity: 1;
 }
 
 @media (min-width: 700px) {
-  .card {
-    display: flex;
-    place-items: center;
+  .quiz-card {
     width: 120rem;
     height: 20rem;
-    position: relative;
-    color: white;
-}
-
-.card-body {
-  display: block;
-  place-items: center;
-  width: 122rem;
-  height: 20rem;
-  color: white;
-}
-
-  .titulo-prova p {
-    color: #7E33B7;
-    text-align: center;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    position: absolute;
-    top: 5rem;
-    width: 100%;
   }
 
+  .card-body {
+    width: 122rem;
+    height: 20rem;
+  }
+
+  .titulo-prova p {
+    font-size: 50px;
+  }
 }
