@@ -127,6 +127,40 @@ form {
   background-color: #a1e72f;
 }
 
+.botoes {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 20rem;
+  left: 15%;
+}
+
+.botoes .btn-success {
+  margin-right: 60rem;
+  display: inline-flex;
+  padding: 16px 24px;
+  background-color: #a1e72f;
+  border-color: transparent;
+  border-radius: 15px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.botoes .btn-success:hover {
+  background-color: #97dd26;
+  color: #000000;
+  border-color: transparent;
+}
+
+.botoes .btn-success:active,
+.botoes .btn-success:focus {
+  background-color: #a1e72f;
+  outline: none;
+}
+
 @media (min-width: 700px) {
   .titulo-prova p {
     font-size: 50px;
