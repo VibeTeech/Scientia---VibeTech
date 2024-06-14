@@ -161,6 +161,37 @@ form {
   outline: none;
 }
 
+.resposta-bonus {
+  position: fixed;
+  top: 15rem;     
+  right: 10rem;
+  margin: 0;
+}
+
+.resposta-bonus .btn-primary {
+  padding: 16px 24px;
+  gap: 8px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #640BA7;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 15px;
+  border-color: transparent;
+}
+
+.resposta-bonus .btn-primary:hover{
+  background-color: #7e10d1;
+}
+
+.resposta-bonus .btn-primary:active,
+.resposta-bonus .btn-primary:focus {
+  background-color: #640BA7;
+}
+
 
 @media (min-width: 700px) {
   .titulo-prova p {
