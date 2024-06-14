@@ -23,6 +23,34 @@
     data-bs-whatever="@mdo">Resposta Bônus</button>
   </div>
   
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-dialog-top">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pergunta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Qual é a capital da França?</p>
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Resposta:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar Resposta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="respondidas">
     <span class="badge badge-secondary">Respondidas: 1 de 3</span>
   </div>
