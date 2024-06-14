@@ -129,10 +129,10 @@ form {
 
 .botoes {
   display: flex;
-  position: relative;
+  position:fixed;
   justify-content: center;
   margin-top: 20rem;
-  left: 15%;
+  left: 28%;
 }
 
 .botoes .btn-success {
@@ -160,6 +160,7 @@ form {
   background-color: #a1e72f;
   outline: none;
 }
+
 
 @media (min-width: 700px) {
   .titulo-prova p {
