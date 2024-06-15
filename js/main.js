@@ -17,9 +17,7 @@ const botaoContinuar = document.getElementById('botaoSim');
 // EVENTO AO CLICAR
 botaoSim.addEventListener('click', function() {
     // PAGINA DE PERGUNTAS
-    const novaPagina = "https://www.google.com.br/?hl=pt-BR";
+    const novaPagina = "./prova.html";
     
     window.location.href = novaPagina;
 });
-
-
