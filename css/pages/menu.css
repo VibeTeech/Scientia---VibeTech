@@ -47,6 +47,16 @@ body {
   background-color: #7E33B7;
   position: relative;
   top: 5rem;
+  width: 120rem;
+  height: 45rem;
+  margin: auto;
+  background-color: #640BA7;
+}
+
+.border-menu ul li span {
+  width: 30px; 
+  height: 30px; 
+  background-color: #A167C9;
 }
 
 .list-unstyled li {
@@ -68,4 +78,22 @@ ul.list-unstyled.mt-5 li:hover {
 
 ul.list-unstyled.mt-5 li:active {
   background-color: #a545e9;
+}
+
+@media (min-width: 300px ) and (max-width: 1680) {
+  .border-menu {
+      color: #FFFFFF;
+      background-color: #7E33B7;
+      top: 5rem;
+      width: 120rem;
+      height: 45rem;
+      margin: auto;
+      background-color: #640BA7;
+    }
+  
+    .border-menu ul li span {
+      width: 30px;
+      height: 30px;
+      background-color: #A167C9;
+    }
 }
