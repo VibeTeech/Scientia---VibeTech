@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.image-prova img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.titulo-prova p {
+  color: #7E33B7;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+.quiz-card {
+  display: flex;
+  background-color: #6a0dad;
+  place-items: center;
+  position: relative;
+  left: 15%;
+  color: white;
+  border-radius: 10px;
+  width: 90rem;
+  height: 20rem;
+  top: 12rem;
+}
+
+.quiz-card .form-check-label {
+  font-size: 1.2em;
+  display: block;
+}
+
+.card-body {
+  display: block;
+  place-items: center;
+  width: 92rem;
+  height: 20rem;
+  position: absolute;
+  color: white;
+}
+.card-body h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.rounded-circle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 0.5rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #A167C9;
+}
+
+form {
+  background-color: #7E33B7;
+  position: relative;
+  place-items: center;
+  border-radius: 5px;
+  padding: 2rem;
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+
+.form-check {
+  display: block;
+  position: relative;
+  top: 1rem;
+}
+
+.form-check-input {
+  background-color: transparent;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  border-color: #A3E635;
+}
+
+.form-check-input:checked {
+  background-color: #A3E635;
+  border-color: #A3E635;
+}
+
+.respondidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.respondidas .badge-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 56px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #a1e72f;
+}
+
+.botoes {
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  margin-top: 20rem;
+  left: 28%;
+}
+
+.botoes .btn-success {
+  margin-right: 60rem;
+  display: inline-flex;
+  padding: 16px 24px;
+  background-color: #a1e72f;
+  border-color: transparent;
+  border-radius: 15px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.botoes .btn-success:hover {
+  background-color: #97dd26;
+  color: #000000;
+  border-color: transparent;
+}
+
+.botoes .btn-success:active,
+.botoes .btn-success:focus {
+  background-color: #a1e72f;
+  outline: none;
+}
+
+.resposta-bonus {
+  position: fixed;
+  top: 15rem;     
+  right: 10rem;
+  margin: 0;
+}
+
+.resposta-bonus .btn-primary {
+  padding: 16px 24px;
+  gap: 8px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #640BA7;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 15px;
+  border-color: transparent;
+}
+
+.resposta-bonus .btn-primary:hover{
+  background-color: #7e10d1;
+}
+
+.resposta-bonus .btn-primary:active,
+.resposta-bonus .btn-primary:focus {
+  background-color: #640BA7;
+}
+
+
+@media (min-width: 700px) {
+  .titulo-prova p {
+    font-size: 50px;
+  }
+}
