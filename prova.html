@@ -27,16 +27,12 @@
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-dialog-top">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Pergunta</h5>
+          <h1 class="modal-title" id="exampleModalLabel">Pergunta</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Qual é a capital da França?</p>
-          <form>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nome:</label>
-              <input type="text" class="form-control" id="recipient-name">
-            </div>
+          <h1>Quanto é 1.000 + 1.000? </h1>
+          <form class="modal-resposta">
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Resposta:</label>
               <textarea class="form-control" id="message-text"></textarea>
@@ -44,8 +40,8 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Enviar Resposta</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
         </div>
       </div>
     </div>
@@ -66,7 +62,7 @@
           <span class="card-title rounded-circle d-inline-flex">1</span>
           Quem declarou a Independência no Brasil?
         </h3>
-        <form>
+        <form class="form-chekagem">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
             <label class="form-check-label" for="option1">Getúlio Vargas</label>
