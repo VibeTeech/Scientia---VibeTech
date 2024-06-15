@@ -9,7 +9,7 @@ itensLista.forEach(function(item) {
     })
 })
 
-const botaoContinuar = document.getElementById('botaSim')
+const botaoContinuar = document.getElementById('botaoSim')
 
 botaoContinuar.addEventListener('click', function() {
 
@@ -22,7 +22,7 @@ botaoContinuar.addEventListener('click', function() {
             novaPagina = './prova_geografia.html'
             break
         case 'historia':
-            novaPagina = './prova_historia.html'
+            novaPagina = './prova_historia1.html'
             break
         default:
             novaPagina = './menu.html'
@@ -31,3 +31,6 @@ botaoContinuar.addEventListener('click', function() {
 
     window.location.href = novaPagina
 })
+
+
+  
