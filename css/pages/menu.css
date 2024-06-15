@@ -80,6 +80,10 @@ ul.list-unstyled.mt-5 li:active {
   background-color: #a545e9;
 }
 
+.questao {
+  margin-right: 10px
+}
+
 @media (min-width: 300px ) and (max-width: 1680) {
   .border-menu {
       color: #FFFFFF;
