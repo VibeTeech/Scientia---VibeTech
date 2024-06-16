@@ -1,23 +1,36 @@
-//ao clicar na disciplina, seleciona o banco de questoes da disciplina
-//captura todos os elementos <li> dentro da lista pelo seu ID
-const itensLista = document.querySelectorAll('#listaDisciplinas li');
+const itensLista = document.querySelectorAll('#listaDisciplinas li')
 
-// EVENTO AO CLICAR 
+let disciplinaSelecionada = ''
+
 itensLista.forEach(function(item) {
-    item.addEventListener('click', function() {
-        //GUARDAR ID DA LISTA SELECIONADA
-        let guardaDisciplina = item.innerText;
-        console.log(guardaDisciplina);
-    });
-});
+    item.addEventListener('click', function(){
+        disciplinaSelecionada = item.id
+        console.log(disciplinaSelecionada)
+    })
+})
 
-// BOTÃO APÓS SELECIONAR A DISCIPLINA QUE DESEJA REALZIAR
-const botaoContinuar = document.getElementById('botaoSim');
+const botaoContinuar = document.getElementById('botaoSim')
 
-// EVENTO AO CLICAR
-botaoSim.addEventListener('click', function() {
-    // PAGINA DE PERGUNTAS
-    const novaPagina = "./prova.html";
-    
-    window.location.href = novaPagina;
-});
+botaoContinuar.addEventListener('click', function() {
+
+    let novaPagina = ''
+    switch(disciplinaSelecionada){
+        case 'ingles':
+            novaPagina = './prova_ingles.html'
+            break
+        case 'geografia':
+            novaPagina = './prova_geografia.html'
+            break
+        case 'historia':
+            novaPagina = './prova_historia1.html'
+            break
+        default:
+            novaPagina = './menu.html'
+            break
+    }
+
+    window.location.href = novaPagina
+})
+
+
+  

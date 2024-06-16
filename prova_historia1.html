@@ -18,9 +18,9 @@
   <div class="image-prova">
     <img src="./img/logo.svg" alt="logo-padrao">
   </div>
-  <div class="resposta-bonus">
+  <div id="dica" class="resposta-bonus">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-    data-bs-whatever="@mdo">Resposta Bônus</button>
+    data-bs-whatever="@mdo">Dica</button>
   </div>
   
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -41,7 +41,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-          <button type="button" class="btn btn-primary">Confirmar</button>
+          <button type="button" class="btn btn-primary" id="confirmarResposta">Confirmar</button>
         </div>
       </div>
     </div>
@@ -92,6 +92,34 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM completamente carregado e analisado');
+  
+    document.getElementById('confirmarResposta').addEventListener('click', function() {
+      const resposta = document.getElementById('message-text').value.trim();
+      console.log('Resposta:', resposta);
+  
+      if (resposta === "2000") { // Verifica se a resposta está correta
+        // Encontra e risca a alternativa incorreta
+        const incorrectOption = document.getElementById('option1');
+        const incorrectLabel = incorrectOption.nextElementSibling;
+  
+        incorrectOption.disabled = true;
+        incorrectLabel.style.textDecoration = 'line-through';
+        incorrectLabel.style.color = 'gray'; // Muda a cor para cinza
+  
+        // Fecha a modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+        modal.hide();
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+    });
+  });
+  </script>
+  
 </body>
 
 </html>
