@@ -84,20 +84,54 @@ ul.list-unstyled.mt-5 li:active {
   margin-right: 10px
 }
 
-@media (min-width: 300px ) and (max-width: 1680) {
+@media (min-width: 300px ) and (max-width: 700px) {
   .border-menu {
-      color: #FFFFFF;
-      background-color: #7E33B7;
-      top: 5rem;
-      width: 120rem;
-      height: 45rem;
-      margin: auto;
-      background-color: #640BA7;
+    display: block;
+    position: relative;
+    top: 5rem;
+    width: 120rem;
+    height: 45rem;
+    margin: auto;
     }
   
     .border-menu ul li span {
       width: 30px;
       height: 30px;
-      background-color: #A167C9;
     }
+}
+
+@media (min-width: 400px) and (max-width:900px) {
+  .titulo-menu p {
+    display: flex;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .border-menu {
+    display: block;
+    position: relative;
+    top: 8rem;
+    width: 40rem;
+    height: 45rem;
+    margin: auto;
+  }
+  .border-menu ul li span {
+    width: 30px;
+    height: 30px;
+  }
+
+  .image-menu img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 18rem;
+    height: 18rem;
+  }
 }
