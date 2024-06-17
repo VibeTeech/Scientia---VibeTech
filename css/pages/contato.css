@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.image-menu img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.titulo-menu p {
+  color: #7E33B7;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+.selector h3 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.border-contato {
+  display: block;
+  width: 120rem;
+  height: 45rem;
+  top: 5rem;
+  margin: auto;
+  position: relative;
+  color: #FFFFFF;
+  background-color: #640BA7;
+}
+
+.cartoes {
+  display: block;
+  position: absolute;
+  justify-content: center;
+}
+
+.cartao-visita-centro {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 42rem;
+  height: 15rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+}
+
+.cartao-visita-esquerda {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 42rem;
+  height: 15rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+}
+
+.cartao-visita-terceiro {
+  display: flex;
+  position: relative;
+  bottom: 16rem;
+  margin-left: 72rem;
+  align-items: center;
+  width: 42rem;
+  height: 15rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+}
+
+.cartao-visita-quarto {
+    display: flex;
+    position: relative;
+    bottom: 16rem;
+    margin-left: 72rem;
+    align-items: center;
+    width: 42rem;
+    height: 15rem;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: #7E33B7;
+}
+
+.imagem-esquerda, .imagem-centro, .imagem-terceiro, .imagem-quarto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile {
+  font-size: 28px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cargo-ceo, .cargo-criativo, .cargo-tecnico, .cargo-financeiro {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cargo-ceo {
+  color: #00A100;
+}
+.cargo-criativo {
+  color: #ADD8E6;
+}
+.cargo-tecnico {
+  color: #1701e2;
+}
+
+.cargo-financeiro {
+  color: #BDFF00;
+}
+
+.cartao-visita-esquerda, .cartao-visita-centro, .cartao-visita-terceiro, .cartao-visita-quarto {
+  margin-bottom: 1rem;
+}
+
+ion-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+@media (min-width: 400px) and (max-width:900px) {
+.image img {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 20rem;
+    height: 20rem;
+  }
+  .titulo-menu p {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+    place-content: center;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .border-contato {
+    display: block;
+    width: 40rem;
+    height: 85rem;
+    position: relative;
+    color: #FFFFFF;
+    background-color: #640BA7;
+  }
+
+  .cartoes {
+    display: block;
+    position: absolute;
+    justify-content: center;
+  }
+  
+  .cartao-visita-centro {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35rem;
+    height: 15rem;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: #7E33B7;
+  }
+  
+  .cartao-visita-esquerda {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35rem;
+    height: 15rem;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: #7E33B7;
+  }
+  
+  .cartao-visita-terceiro {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35rem;
+    height: 15rem;
+    margin-left: 1px;
+    margin-top: 17rem;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: #7E33B7;
+  }
+  
+  .cartao-visita-quarto {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35rem;
+    height: 15rem;
+    margin-left: 1px;
+    border-radius: 10px;
+    background-color: #7E33B7;
+  }
+}
