@@ -54,14 +54,19 @@ body {
   background-color: #640BA7;
 }
 
+.cartoes {
+  display: block;
+  position: absolute;
+  justify-content: center;
+}
+
 .cartao-visita-centro {
   display: flex;
   position: relative;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
   width: 42rem;
   height: 15rem;
+  padding: 0 2rem;
   border-radius: 10px;
   background-color: #7E33B7;
 }
@@ -69,11 +74,10 @@ body {
 .cartao-visita-esquerda {
   display: flex;
   position: absolute;
-  justify-content: center;
   align-items: center;
-  padding: 0 2rem;
   width: 42rem;
   height: 15rem;
+  padding: 0 2rem;
   border-radius: 10px;
   background-color: #7E33B7;
 }
@@ -82,26 +86,24 @@ body {
   display: flex;
   position: relative;
   bottom: 16rem;
-  left: 72rem;
-  justify-content: center;
+  margin-left: 72rem;
   align-items: center;
-  padding: 0 2rem;
   width: 42rem;
   height: 15rem;
+  padding: 0 2rem;
   border-radius: 10px;
   background-color: #7E33B7;
 }
 
 .cartao-visita-quarto {
     display: flex;
-    position: absolute;
-    justify-content: center;
-    bottom: 4rem;
-    left: 75rem;
+    position: relative;
+    bottom: 16rem;
+    margin-left: 72rem;
     align-items: center;
-    padding: 0 2rem;
     width: 42rem;
     height: 15rem;
+    padding: 0 2rem;
     border-radius: 10px;
     background-color: #7E33B7;
 }
@@ -124,7 +126,7 @@ body {
   line-height: normal;
 }
 
-.cargo, .cargo1, .cargo2, .cargo3 {
+.cargo-ceo, .cargo-criativo, .cargo-tecnico, .cargo-financeiro {
   text-align: center;
   font-size: 25px;
   font-style: normal;
@@ -132,17 +134,17 @@ body {
   line-height: normal;
 }
 
-.cargo {
+.cargo-ceo {
   color: #00A100;
 }
-.cargo1 {
+.cargo-criativo {
   color: #ADD8E6;
 }
-.cargo2 {
+.cargo-tecnico {
   color: #1701e2;
 }
 
-.cargo3 {
+.cargo-financeiro {
   color: #BDFF00;
 }
 
