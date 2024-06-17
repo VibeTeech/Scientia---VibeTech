@@ -37,16 +37,16 @@ body {
 .selector h3 {
   text-align: center;
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 33px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
 
 .border-contato {
   display: block;
   width: 120rem;
-  height: 65rem;
+  height: 45rem;
   top: 5rem;
   margin: auto;
   position: relative;
@@ -60,11 +60,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  width: 41rem;
+  width: 42rem;
   height: 15rem;
   border-radius: 10px;
   background-color: #7E33B7;
-  margin-bottom: 2rem;
 }
 
 .cartao-visita-esquerda {
@@ -77,37 +76,34 @@ body {
   height: 15rem;
   border-radius: 10px;
   background-color: #7E33B7;
-  margin-bottom: 2rem;
 }
 
 .cartao-visita-terceiro {
   display: flex;
   position: relative;
   bottom: 16rem;
-  left: 73rem;
+  left: 72rem;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  width: 41rem;
+  width: 42rem;
   height: 15rem;
   border-radius: 10px;
   background-color: #7E33B7;
-  margin-bottom: 2rem;
 }
 
 .cartao-visita-quarto {
     display: flex;
     position: absolute;
     justify-content: center;
-    bottom: 24rem;
-    left: 76rem;
+    bottom: 4rem;
+    left: 75rem;
     align-items: center;
     padding: 0 2rem;
     width: 42rem;
     height: 15rem;
     border-radius: 10px;
     background-color: #7E33B7;
-    margin-bottom: 2rem;
 }
 
 .imagem-esquerda, .imagem-centro, .imagem-terceiro, .imagem-quarto {
@@ -150,6 +146,6 @@ body {
   color: #BDFF00;
 }
 
-.cartao-visita-esquerda, .cartao-visita-centro, .cartao-visita-terceiro {
+.cartao-visita-esquerda, .cartao-visita-centro, .cartao-visita-terceiro, .cartao-visita-quarto {
   margin-bottom: 1rem;
 }
