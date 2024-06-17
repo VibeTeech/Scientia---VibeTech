@@ -22,7 +22,7 @@ botaoContinuar.addEventListener('click', function() {
             novaPagina = './prova_geografia.html'
             break
         case 'historia':
-            novaPagina = './prova_historia1.html'
+            novaPagina = './prova_historia.html'
             break
         default:
             novaPagina = './menu.html'
