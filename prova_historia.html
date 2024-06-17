@@ -73,7 +73,7 @@
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
-            <label class="form-check-label" for="option3">D. Pedro II</label>
+            <label class="form-check-label" for="option3">D. Pedro I</label>
           </div>
         </form>
       </div>
@@ -118,6 +118,28 @@
       }
     });
   });
+  </script>
+  
+  <script>
+    const correctAnswers = {
+      question1: "option3"
+    };
+
+    function submitQuiz() {
+      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+      const form = document.getElementById('quiz-form');
+      const formData = new FormData(form);
+
+      for (const [question, answer] of formData.entries()) {
+        if (answer === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+      localStorage.setItem('quizScore', score);
+      window.location.href = 'quiz2.html';
+    }
   </script>
   
 </body>

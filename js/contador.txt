@@ -1,0 +1,230 @@
+Sim, é possível usar o contador para contabilizar respostas de múltiplas páginas de questões e apresentar o resultado final em uma tela separada. Para isso, você pode usar o localStorage para armazenar as respostas corretas de cada página e depois calcular a pontuação total ao final.
+
+Aqui está um exemplo de como fazer isso:
+
+Passo 1: Página 1 do Quiz
+HTML (quiz1.html)
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Página 1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card quiz-card">
+      <div class="card-body">
+        <h3>
+          <span class="card-title rounded-circle d-inline-flex">1</span>
+          Quem declarou a Independência no Brasil?
+        </h3>
+        <form class="form-chekagem" id="quiz-form">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+            <label class="form-check-label" for="option1">Getúlio Vargas</label>
+          </div>  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+            <label class="form-check-label" for="option2">Pedro Alvarez Cabral</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
+            <label class="form-check-label" for="option3">D. Pedro I</label>
+          </div>
+          <button type="button" onclick="submitQuiz()">Próxima Página</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      question1: "option3"
+    };
+
+    function submitQuiz() {
+      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+      const form = document.getElementById('quiz-form');
+      const formData = new FormData(form);
+
+      for (const [question, answer] of formData.entries()) {
+        if (answer === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+      localStorage.setItem('quizScore', score);
+      window.location.href = 'quiz2.html';
+    }
+  </script>
+</body>
+</html>
+
+Passo 2: Página 2 do Quiz
+HTML (quiz2.html)
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Página 2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card quiz-card">
+      <div class="card-body">
+        <h3>
+          <span class="card-title rounded-circle d-inline-flex">2</span>
+          Qual é a capital do Brasil?
+        </h3>
+        <form class="form-chekagem" id="quiz-form">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="option1" value="option1">
+            <label class="form-check-label" for="option1">Rio de Janeiro</label>
+          </div>  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="option2" value="option2">
+            <label class="form-check-label" for="option2">Brasília</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="option3" value="option3">
+            <label class="form-check-label" for="option3">São Paulo</label>
+          </div>
+          <button type="button" onclick="submitQuiz()">Próxima Página</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      question2: "option2"
+    };
+
+    function submitQuiz() {
+      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+      const form = document.getElementById('quiz-form');
+      const formData = new FormData(form);
+
+      for (const [question, answer] of formData.entries()) {
+        if (answer === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+      localStorage.setItem('quizScore', score);
+      window.location.href = 'quiz3.html';
+    }
+  </script>
+</body>
+</html>
+
+Passo 3: Página 3 do Quiz
+HTML (quiz3.html)
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Página 3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card quiz-card">
+      <div class="card-body">
+        <h3>
+          <span class="card-title rounded-circle d-inline-flex">3</span>
+          Qual é a maior floresta tropical do mundo?
+        </h3>
+        <form class="form-chekagem" id="quiz-form">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question3" id="option1" value="option1">
+            <label class="form-check-label" for="option1">Floresta Amazônica</label>
+          </div>  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question3" id="option2" value="option2">
+            <label class="form-check-label" for="option2">Floresta do Congo</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question3" id="option3" value="option3">
+            <label class="form-check-label" for="option3">Floresta de Bornéu</label>
+          </div>
+          <button type="button" onclick="submitQuiz()">Ver Resultado</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      question3: "option1"
+    };
+
+    function submitQuiz() {
+      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+      const form = document.getElementById('quiz-form');
+      const formData = new FormData(form);
+
+      for (const [question, answer] of formData.entries()) {
+        if (answer === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+      localStorage.setItem('quizScore', score);
+      window.location.href = 'resultado.html';
+    }
+  </script>
+</body>
+</html>
+
+Passo 4: Página de Resultado
+HTML (resultado.html)
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h3>Você acertou <span id="correct-answers"></span> de 3 perguntas!</h3>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const score = localStorage.getItem('quizScore');
+      document.getElementById('correct-answers').innerText = score;
+      localStorage.removeItem('quizScore'); // Limpa o localStorage após exibir o resultado
+    });
+  </script>
+</body>
+</html>
+Explicação do Código
+Página do Quiz (quiz1.html, quiz2.html, quiz3.html):
+
+Cada página do quiz contém um formulário com uma pergunta.
+A função submitQuiz() calcula a pontuação parcial e a armazena no localStorage.
+Após a submissão, a função redireciona para a próxima página do quiz ou para a página de resultados.
+**Página de Resultado
