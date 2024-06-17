@@ -52,7 +52,7 @@ body {
   display: block;
 }
 
-.card-body {
+.body {
   display: block;
   place-items: center;
   width: 92rem;

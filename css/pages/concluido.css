@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.image-menu img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.titulo-concluido p {
+  width: 100%;
+  color: #7E33B7;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 5rem;
+}
+
+.resultado-card {
+  display: flex;
+  background-color: #6a0dad;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  color: white;
+  margin-left: 15rem;
+  border-radius: 10px;
+  width: 90rem;
+  height: 50rem;
+}
+
+.mensagem-concluido {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.mensagem-concluido p {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.mensagem-concluido h1 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.badge-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 56px;
+  margin-bottom: 5rem;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #a1e72f;
+}
+
+.repetir {
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.repetir p {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.repetir .btn-success {
+  display: block;
+  padding: 16px 24px;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18rem;
+  margin-top: 5rem;
+  background-color: #a1e72f;
+  border-color: transparent;
+  border-radius: 15px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.repetir .btn-success:hover {
+  background-color: #97dd26;
+  color: #000000;
+  border-color: transparent;
+}
+
+.repetir .btn-success:active,
+.repetir .btn-success:focus {
+  background-color: #a1e72f;
+  outline: none;
+}
