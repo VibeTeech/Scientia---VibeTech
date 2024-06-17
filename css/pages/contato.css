@@ -117,7 +117,7 @@ body {
 }
 
 .profile {
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   text-align: center;
   font-weight: 700;
@@ -148,4 +148,16 @@ body {
 
 .cartao-visita-esquerda, .cartao-visita-centro, .cartao-visita-terceiro, .cartao-visita-quarto {
   margin-bottom: 1rem;
+}
+
+ion-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
