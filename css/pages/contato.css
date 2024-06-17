@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.image-menu img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.titulo-menu p {
+  color: #7E33B7;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+.selector h3 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.border-contato {
+  display: block;
+  width: 120rem;
+  height: 65rem;
+  top: 5rem;
+  margin: auto;
+  position: relative;
+  color: #FFFFFF;
+  background-color: #640BA7;
+}
+
+.cartao-visita-centro {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 41rem;
+  height: 15rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+  margin-bottom: 2rem;
+}
+
+.cartao-visita-esquerda {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  width: 42rem;
+  height: 15rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+  margin-bottom: 2rem;
+}
+
+.cartao-visita-terceiro {
+  display: flex;
+  position: relative;
+  bottom: 16rem;
+  left: 73rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  width: 41rem;
+  height: 15rem;
+  border-radius: 10px;
+  background-color: #7E33B7;
+  margin-bottom: 2rem;
+}
+
+.cartao-visita-quarto {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 24rem;
+    left: 76rem;
+    align-items: center;
+    padding: 0 2rem;
+    width: 42rem;
+    height: 15rem;
+    border-radius: 10px;
+    background-color: #7E33B7;
+    margin-bottom: 2rem;
+}
+
+.imagem-esquerda, .imagem-centro, .imagem-terceiro, .imagem-quarto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile {
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cargo, .cargo1, .cargo2, .cargo3 {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cargo {
+  color: #00A100;
+}
+.cargo1 {
+  color: #ADD8E6;
+}
+.cargo2 {
+  color: #1701e2;
+}
+
+.cargo3 {
+  color: #BDFF00;
+}
+
+.cartao-visita-esquerda, .cartao-visita-centro, .cartao-visita-terceiro {
+  margin-bottom: 1rem;
+}
