@@ -135,7 +135,7 @@ body {
   left: 28%;
 }
 
-.botoes .btn-success {
+.botoes .btn-success, .btn-danger {
   margin-right: 60rem;
   display: inline-flex;
   padding: 16px 24px;
@@ -157,6 +157,18 @@ body {
 
 .botoes .btn-success:active,
 .botoes .btn-success:focus {
+  background-color: #a1e72f;
+  outline: none;
+}
+
+.botoes .btn-danger:hover {
+  background-color: #97dd26;
+  color: #000000;
+  border-color: transparent;
+}
+
+.botoes .btn-danger:active,
+.botoes .btn-danger:focus {
   background-color: #a1e72f;
   outline: none;
 }
@@ -196,5 +208,88 @@ body {
 @media (min-width: 700px) {
   .titulo-prova p {
     font-size: 50px;
+  }
+}
+
+@media (min-width: 400px) and (max-width:900px) {
+  .titulo-prova p {
+    font-size: 36px;
+    margin-top: 16rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .image-prova img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .respondidas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18rem;
+    align-items: center;
+  }
+
+  .resposta-bonus {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-top: 16rem;
+    margin-left: 20rem;
+  }
+
+  .quiz-card {
+    display: flex;
+    width: 36rem;
+    height: 10rem;
+    place-items: center;
+    position: absolute;
+    margin-top: 48rem;
+    margin-left: -3rem;
+    border-radius: 10px;
+    background-color: #6a0dad;
+    color: white;
+  }
+
+  .card-body {
+    display: block;
+    position: absolute;
+    place-items: center;
+    width: 38rem;
+    height: 10rem;
+    margin-right: -0.10rem;
+    color: white;
+  }
+
+  .rounded-circle {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botoes {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 20rem;
+  }
+  
+  .botoes .btn-success, .btn-danger {
+    display: block;
+    margin-right: 20rem;
+    margin-left: -8rem;
+    justify-content: center;
   }
 }
