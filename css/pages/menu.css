@@ -84,6 +84,19 @@ ul.list-unstyled.mt-5 li:active {
   margin-right: 10px
 }
 
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
 @media (min-width: 300px ) and (max-width: 700px) {
   .border-menu {
     display: block;
@@ -109,6 +122,7 @@ ul.list-unstyled.mt-5 li:active {
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
+    top: 1rem;
   }
   
   .image-menu {
@@ -125,7 +139,7 @@ ul.list-unstyled.mt-5 li:active {
   .border-menu {
     display: block;
     position: relative;
-    margin-top: 2rem;
+    top: 1rem;
     width: 38rem;
     height: 48rem;
     margin: auto;

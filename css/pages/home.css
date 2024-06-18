@@ -63,6 +63,19 @@ body {
   background-color: #532377;
 }
 
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
 @media (min-width: 400px) and (max-width:900px) {
   .titulo-home p {
     display: block;
