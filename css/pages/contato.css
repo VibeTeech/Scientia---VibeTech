@@ -152,6 +152,19 @@ body {
   margin-bottom: 1rem;
 }
 
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
 ion-icon {
   width: 20px;
   height: 20px;
