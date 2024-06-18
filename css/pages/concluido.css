@@ -131,3 +131,83 @@ body {
   background-color: #a1e72f;
   outline: none;
 }
+
+@media (min-width: 400px) and (max-width:900px) {
+  .titulo-concluido p {
+    font-size: 64px;
+    margin-top: 15rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 20rem;
+    height: 20rem;
+  }
+
+.resultado-card {
+  display: flex;
+  background-color: #6a0dad;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  margin-top: 13rem;
+  margin-left: 2.5rem;
+  border-radius: 10px;
+  width: 35rem;
+  height: 50rem;
+}
+
+.mensagem-concluido {
+  margin-right: 2rem;
+}
+
+.mensagem-concluido p {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.mensagem-concluido h1 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.badge-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 6rem;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.repetir p {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.repetir .btn-success {
+  display: block;
+  padding: 16px 24px;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13rem;
+  margin-top: 3rem;
+}
+}
