@@ -209,6 +209,20 @@ body {
   .titulo-prova p {
     font-size: 50px;
   }
+
+  .botoes {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-left: -6rem;
+  }
+
+.resposta-bonus {
+  position: absolute;
+  margin-top: 5rem;
+  margin-right: 15rem;
+}
 }
 
 @media (min-width: 400px) and (max-width:900px) {
