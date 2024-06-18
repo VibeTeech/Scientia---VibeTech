@@ -62,3 +62,36 @@ body {
 .container-home .btn:hover {
   background-color: #532377;
 }
+
+@media (min-width: 400px) and (max-width:900px) {
+  .titulo-home p {
+    display: block;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .image-home img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .container-home {
+    display: grid;
+    flex-direction: column;
+    position: relative;
+    place-items: center;
+    margin-top: 5rem;
+    gap: 5rem
+  }
+}

@@ -14,13 +14,13 @@ body {
   background-color: #ffffff;
 }
 
-.image-menu img {
+.image-menu {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .titulo-menu p {
@@ -102,21 +102,32 @@ ul.list-unstyled.mt-5 li:active {
 
 @media (min-width: 400px) and (max-width:900px) {
   .titulo-menu p {
-    display: flex;
-    width: 100%;
+    display: block;
+    max-width: 100%;
     position: relative;
     text-align: center;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
   }
+  
+  .image-menu {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 20rem;
+    height: 20rem;
+  }
 
   .border-menu {
     display: block;
     position: relative;
-    top: 8rem;
-    width: 40rem;
-    height: 45rem;
+    margin-top: 2rem;
+    width: 38rem;
+    height: 48rem;
     margin: auto;
   }
   .border-menu ul li span {
@@ -124,14 +135,4 @@ ul.list-unstyled.mt-5 li:active {
     height: 30px;
   }
 
-  .image-menu img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    width: 18rem;
-    height: 18rem;
-  }
 }
