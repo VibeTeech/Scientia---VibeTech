@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" type="image/png" href="../../img/ico.svg">
+  <title>Prova</title>
+</head>
+
+<body>
+  <div class="image-prova">
+    <img src="../../img/logo.svg" alt="logo-padrao">
+  </div>
+  <div id="dica" class="resposta-bonus">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    data-bs-whatever="@mdo">Dica</button>
+  </div>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-dialog-top">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Pergunta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Quanto é 1.000 + 1.000? </h1>
+          <form class="modal-resposta">
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Resposta:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          <button type="button" class="btn btn-primary" id="confirmarResposta">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="respondidas">
+    <span class="badge badge-secondary">Respondidas: 1 de 3</span>
+  </div>
+
+  <div class="titulo-prova">
+    <p>Teste seus conhecimentos em História</p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card quiz-card">
+      <div class="card-body">
+        <h3>
+          <span class="card-title rounded-circle d-inline-flex">3</span>
+          Em que ano Cristóvão Colombo chegou à América?
+        </h3>
+        <form class="form-chekagem">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+            <label class="form-check-label" for="option1">1492</label>
+          </div>  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+            <label class="form-check-label" for="option2">1500</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
+            <label class="form-check-label" for="option3">1607</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="botoes">
+    <a href="../../menu.html" class="btn btn-success">Voltar</a>
+    <a href="../../concluido.html" class="btn btn-success">Avançar</a>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM completamente carregado e analisado');
+  
+    document.getElementById('confirmarResposta').addEventListener('click', function() {
+      const resposta = document.getElementById('message-text').value.trim();
+      console.log('Resposta:', resposta);
+  
+      if (resposta === "2000") { // Verifica se a resposta está correta
+        // Encontra e risca a alternativa incorreta
+        const incorrectOption = document.getElementById('option1');
+        const incorrectLabel = incorrectOption.nextElementSibling;
+  
+        incorrectOption.disabled = true;
+        incorrectLabel.style.textDecoration = 'line-through';
+        incorrectLabel.style.color = 'gray'; // Muda a cor para cinza
+  
+        // Fecha a modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+        modal.hide();
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+    });
+  });
+  </script>
+  
+  <script>
+    const correctAnswers = {
+      question1: "option3"
+    };
+
+    function submitQuiz() {
+      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+      const form = document.getElementById('quiz-form');
+      const formData = new FormData(form);
+
+      for (const [question, answer] of formData.entries()) {
+        if (answer === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+      localStorage.setItem('quizScore', score);
+      window.location.href = 'quiz2.html';
+    }
+  </script>
+  
+</body>
+
+</html>

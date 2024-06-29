@@ -16,13 +16,13 @@ botaoContinuar.addEventListener('click', function() {
     let novaPagina = ''
     switch(disciplinaSelecionada){
         case 'ingles':
-            novaPagina = './prova_ingles.html'
+            novaPagina = './provas/ingles/prova_ingles.html'
             break
         case 'geografia':
-            novaPagina = './prova_geografia.html'
+            novaPagina = './provas/geografia/prova_geografia.html'
             break
         case 'historia':
-            novaPagina = './prova_historia.html'
+            novaPagina = './provas/historia/prova_historia.html'
             break
         default:
             novaPagina = './menu.html'
