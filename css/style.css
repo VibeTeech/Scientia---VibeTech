@@ -2,10 +2,12 @@
 
 @import "./pages/home.css";
 @import "./pages/menu.css";
-@import "./pages/prova.css";
 @import "./pages/contato.css";
 @import "./pages/concluido.css";
 
 /* Modals  */
 @import "./modals/modal.css";
 @import "./modals/modal-resposta.css";
+
+/* Provas */
+@import "./provas/prova.css";
