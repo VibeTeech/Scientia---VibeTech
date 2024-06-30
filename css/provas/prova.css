@@ -12,6 +12,16 @@
 body {
   font-size: 1.6rem;
   background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .image-prova {
@@ -232,8 +242,11 @@ body {
 }
 
 .botoes {
-  margin-top: 5rem;
-  left: 22%;
+  margin-top: 65rem;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  left: 30rem;
 }
 }
 
@@ -262,40 +275,50 @@ body {
     width: 100%;
   }
 
-.respondidas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20rem;
-}
-
-.quiz-card {
-  width: 40rem;
-  height: 20rem;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  margin-left: 1rem;
-}
-
-.card-body {
-  width: 42rem;
-  height: 20rem;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
+  .respondidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19rem;
   }
 
-.botoes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  margin-top: 4rem;
-  
+  .resposta-bonus {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    bottom: 3rem;
 }
+  .quiz-card {
+    width: 40rem;
+    height: 20rem;
+    bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin-left: 1rem;
+  }
 
-.botoes .btn-success, .btn-danger {
-  margin-right: 6rem;
-}
-}
+  .card-body {
+    width: 42rem;
+    height: 20rem;
+    margin-bottom: 0.1rem;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    }
+
+  .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    left: 10rem;   
+    top: 16rem; 
+  }
+
+  .botoes .btn-success, .btn-danger {
+    margin-right: 4rem;
+  }
+  }
