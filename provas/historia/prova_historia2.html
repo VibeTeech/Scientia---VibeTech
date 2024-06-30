@@ -63,15 +63,15 @@
         </h3>
         <form class="form-chekagem">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question3" id="option1" value="option1">
+            <input class="form-check-input" type="radio" name="question3" id="option1" value="option1" onchange="saveAnswer('question3', 'option1')">
             <label class="form-check-label" for="option1">1492</label>
           </div>  
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question3" id="option2" value="option2">
+            <input class="form-check-input" type="radio" name="question3" id="option2" value="option2" onchange="saveAnswer('question3', 'option2')">
             <label class="form-check-label" for="option2">1500</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question3" id="option3" value="option3">
+            <input class="form-check-input" type="radio" name="question3" id="option3" value="option3" onchange="saveAnswer('question3', 'option3')">
             <label class="form-check-label" for="option3">1607</label>
           </div>
         </form>
@@ -90,7 +90,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
+  <script src="../../js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -118,29 +118,6 @@
     });
   });
   </script>
-  
-  <script>
-    const correctAnswers = {
-      question3: "option3"
-    };
-
-    function submitQuiz() {
-      let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
-
-      const form = document.getElementById('quiz-form');
-      const formData = new FormData(form);
-
-      for (const [question, answer] of formData.entries()) {
-        if (answer === correctAnswers[question]) {
-          score++;
-        }
-      }
-
-      localStorage.setItem('quizScore', score);
-      window.location.href = 'concluido.html';
-    }
-  </script>
-  
 </body>
 
 </html>
