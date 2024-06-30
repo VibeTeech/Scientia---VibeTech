@@ -12,7 +12,6 @@ itensLista.forEach(function(item) {
 const botaoContinuar = document.getElementById('botaoSim')
 
 botaoContinuar.addEventListener('click', function() {
-
     let novaPagina = ''
     switch(disciplinaSelecionada){
         case 'ingles':

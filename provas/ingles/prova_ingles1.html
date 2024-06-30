@@ -64,15 +64,15 @@
         </h3>
         <form class="form-chekagem">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+            <input class="form-check-input" type="radio" name="question2" id="option1" value="option1">
             <label class="form-check-label" for="option1">Banana</label>
           </div>  
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+            <input class="form-check-input" type="radio" name="question2" id="option2" value="option2">
             <label class="form-check-label" for="option2">Maçã</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
+            <input class="form-check-input" type="radio" name="question2" id="option3" value="option3">
             <label class="form-check-label" for="option3">Laranja</label>
           </div>
         </form>
@@ -82,7 +82,7 @@
 
   <div class="botoes">
     <a href="../../menu.html" class="btn btn-danger">Voltar</a>
-    <a href="../ingles/prova_ingles2.html" class="btn btn-success">Avançar</a>
+    <a href="../ingles/prova_ingles2.html" class="btn btn-success" onclick="submitQuiz()">Avançar</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -119,6 +119,29 @@
     });
   });
   </script>
+
+<script>
+  const correctAnswers = {
+    question2: "option2"
+  };
+
+  function submitQuiz() {
+    let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+    const form = document.getElementById('quiz-form');
+    const formData = new FormData(form);
+
+    for (const [question, answer] of formData.entries()) {
+      if (answer === correctAnswers[question]) {
+        score++;
+      }
+    }
+
+    localStorage.setItem('quizScore', score);
+    window.location.href = '../../prova_ingles2.html';
+  }
+</script>
+
   
 </body>
 

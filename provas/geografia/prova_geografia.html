@@ -119,6 +119,28 @@
     });
   });
   </script>
+
+<script>
+  const correctAnswers = {
+    question1: "option2"
+  };
+
+  function submitQuiz() {
+    let score = localStorage.getItem('quizScore') ? parseInt(localStorage.getItem('quizScore')) : 0;
+
+    const form = document.getElementById('quiz-form');
+    const formData = new FormData(form);
+
+    for (const [question, answer] of formData.entries()) {
+      if (answer === correctAnswers[question]) {
+        score++;
+      }
+    }
+
+    localStorage.setItem('quizScore', score);
+    window.location.href = './provas/geografia/prova_geografia1.html';
+  }
+</script>
   
 </body>
 
