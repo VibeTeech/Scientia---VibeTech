@@ -236,3 +236,66 @@ body {
   left: 22%;
 }
 }
+
+@media (min-width: 400px) and (max-width:900px) {
+  .image-prova {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    }
+
+  .image-prova img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .titulo-prova p {
+    position: absolute;
+    margin-top: 15rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+  }
+
+.respondidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+
+.quiz-card {
+  width: 40rem;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin-left: 1rem;
+}
+
+.card-body {
+  width: 42rem;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  }
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin-top: 4rem;
+  
+}
+
+.botoes .btn-success, .btn-danger {
+  margin-right: 6rem;
+}
+}
