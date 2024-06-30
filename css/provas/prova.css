@@ -14,11 +14,12 @@ body {
   background-color: #ffffff;
 }
 
+.image-prova {
+  display: flex;
+  position: relative;
+}
+
 .image-prova img {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
   width: 18rem;
   height: 18rem;
 }
@@ -26,7 +27,7 @@ body {
 .titulo-prova p {
   color: #7E33B7;
   text-align: center;
-  font-size: 64px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   position: absolute;
@@ -34,22 +35,70 @@ body {
   width: 100%;
 }
 
+.respondidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.respondidas .badge-secondary {
+  display: flex;
+  width: 282px;
+  height: 56px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #a1e72f;
+}
+
+.resposta-bonus {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.resposta-bonus .btn-primary {
+  padding: 16px 24px;
+  background-color: #640BA7;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 15px;
+  border-color: transparent;
+}
+
+.resposta-bonus .btn-primary:hover{
+  background-color: #7e10d1;
+}
+
+.resposta-bonus .btn-primary:active,
+.resposta-bonus .btn-primary:focus {
+  background-color: #640BA7;
+}
+
 .quiz-card {
   display: flex;
-  background-color: #6a0dad;
   place-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  left: 15%;
-  color: white;
   border-radius: 10px;
   width: 90rem;
   height: 20rem;
-  top: 12rem;
+  margin-top: 1rem;
+  margin-left: 20rem;
+  color: white;
+  background-color: #6a0dad;
 }
 
 .quiz-card .form-check-label {
-  font-size: 1.2em;
   display: block;
+  font-size: 1.2em;
 }
 
 .card-body {
@@ -108,30 +157,11 @@ body {
   border-color: #A3E635;
 }
 
-.respondidas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.respondidas .badge-secondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 282px;
-  height: 56px;
-  border-radius: 15px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #a1e72f;
-}
-
 .botoes {
   display: flex;
   position:fixed;
   justify-content: center;
-  margin-top: 20rem;
+  margin-top: 8rem;
   left: 28%;
 }
 
@@ -172,38 +202,6 @@ body {
   background-color: #a1e72f;
   outline: none;
 }
-
-.resposta-bonus {
-  position: fixed;
-  top: 15rem;     
-  right: 10rem;
-  margin: 0;
-}
-
-.resposta-bonus .btn-primary {
-  padding: 16px 24px;
-  gap: 8px;
-  align-items: flex-start;
-  box-sizing: border-box;
-  background-color: #640BA7;
-  color: #ffffff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px;
-  border-radius: 15px;
-  border-color: transparent;
-}
-
-.resposta-bonus .btn-primary:hover{
-  background-color: #7e10d1;
-}
-
-.resposta-bonus .btn-primary:active,
-.resposta-bonus .btn-primary:focus {
-  background-color: #640BA7;
-}
-
 .footer {
   background-color: #f8f9fa;
   padding: 10px 0;
@@ -215,107 +213,4 @@ body {
 .footer p {
   margin: 0;
   color: #6c757d;
-}
-
-@media (min-width: 700px) {
-  .titulo-prova p {
-    font-size: 50px;
-  }
-
-  .botoes {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    margin-top: 15rem;
-    margin-left: -6rem;
-  }
-
-.resposta-bonus {
-  position: absolute;
-  margin-top: 5rem;
-  margin-right: 15rem;
-}
-}
-
-@media (min-width: 400px) and (max-width:900px) {
-  .titulo-prova p {
-    font-size: 36px;
-    margin-top: 16rem;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .image-prova img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .respondidas {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18rem;
-    align-items: center;
-  }
-
-  .resposta-bonus {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
-    margin-top: 16rem;
-    margin-left: 20rem;
-  }
-
-  .quiz-card {
-    display: flex;
-    width: 36rem;
-    height: 10rem;
-    place-items: center;
-    position: absolute;
-    margin-top: 48rem;
-    margin-left: -3rem;
-    border-radius: 10px;
-    background-color: #6a0dad;
-    color: white;
-  }
-
-  .card-body {
-    display: block;
-    position: absolute;
-    place-items: center;
-    width: 38rem;
-    height: 15rem;
-    margin-right: -0.10rem;
-    color: white;
-  }
-
-  .rounded-circle {
-    display: block;
-    width: 38px;
-    height: 38px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .botoes {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    margin-top: 20rem;
-  }
-  
-  .botoes .btn-success, .btn-danger {
-    display: block;
-    margin-right: 20rem;
-    margin-left: -8rem;
-    justify-content: center;
-  }
 }
