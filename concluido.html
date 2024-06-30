@@ -29,7 +29,7 @@
           <h1>Você acertou:</h1>
       </div>
       <div class="concluido-resultado">
-        <h3><span id="correct-answers"></span> de 3 perguntas!</h3>
+        <h3><span id="correct-answers"></span>0 de 3 perguntas!</h3>
       </div>
       <div class="repetir">
         <p>Gostaria de jogar novamente?</p>
@@ -55,7 +55,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-      const score = localStorage.getItem('quizScore') || 0;
+      const score = localStorage.getItem('quizScore');
       document.getElementById('correct-answers').textContent = `${score}`;
       localStorage.removeItem('quizScore'); // Limpa o localStorage após exibir o resultado
     });
