@@ -214,3 +214,25 @@ body {
   margin: 0;
   color: #6c757d;
 }
+
+@media (max-width:1366px) {
+.titulo-prova p {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.image-prova img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.quiz-card {
+  margin-left: 15rem;
+}
+
+.botoes {
+  margin-top: 5rem;
+  left: 22%;
+}
+}
