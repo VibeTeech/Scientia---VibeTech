@@ -19,7 +19,7 @@
     <img src="../../img/logo.svg" alt="logo-padrao">
   </div>
   <div class="respondidas">
-    <span class="badge badge-secondary">Respondidas: 1 de 3</span>
+    <span class="badge badge-secondary">Respondidas: 3 de 3</span>
   </div>
   <div id="dica" class="resposta-bonus">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -34,7 +34,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <h1>Quanto é 1.000 + 1.000? </h1>
+          <h1>Quanto é 20 / 4? </h1>
           <form class="modal-resposta">
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Resposta:</label>
@@ -100,9 +100,9 @@
       const resposta = document.getElementById('message-text').value.trim();
       console.log('Resposta:', resposta);
   
-      if (resposta === "2000") { // Verifica se a resposta está correta
+      if (resposta === "5") { // Verifica se a resposta está correta
         // Encontra e risca a alternativa incorreta
-        const incorrectOption = document.getElementById('option1');
+        const incorrectOption = document.getElementById('option3');
         const incorrectLabel = incorrectOption.nextElementSibling;
   
         incorrectOption.disabled = true;
