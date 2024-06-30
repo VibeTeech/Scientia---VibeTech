@@ -29,7 +29,7 @@
           <h1>Você acertou:</h1>
       </div>
       <div class="concluido-resultado">
-          <span class="badge badge-secondary">8 Respostas de 10</span>
+        <h3><span id="correct-answers"></span><span id="score">0 de 3 perguntas!</span></h3>
       </div>
       <div class="repetir">
         <p>Gostaria de jogar novamente?</p>
@@ -51,7 +51,43 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
-</body>
+  <script src="../../js/main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const correctAnswers = {
+        historia: {
+          question1: 'option3',
+          question2: 'option2',
+          question3: 'option1'
+        },
+        ingles: {
+          question1: 'option2',
+          question2: 'option2',
+          question3: 'option2'
+        },
+        geografia: {
+          question1: 'option2',
+          question2: 'option3',
+          question3: 'option1'
+        }
+      };
+
+      const currentSubject = localStorage.getItem('currentSubject');
+      if (!currentSubject || !correctAnswers[currentSubject]) {
+        document.getElementById('score').innerText = `0 de 3 questões`;
+        return;
+      }
+
+      const answers = correctAnswers[currentSubject];
+      let score = 0;
+      for (let question in answers) {
+        if (localStorage.getItem(question) === answers[question]) {
+          score++;
+        }
+      }
+      document.getElementById('score').innerText = `${score} de 3 questões`;
+    });
+  </script>
+</body>
 </html>

@@ -19,7 +19,7 @@
     <img src="../../img/logo.svg" alt="logo-padrao">
   </div>
   <div class="respondidas">
-    <span class="badge badge-secondary">Respondidas: 1 de 3</span>
+    <span class="badge badge-secondary">Respondidas: 2 de 3</span>
   </div>
   <div id="dica" class="resposta-bonus">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -34,7 +34,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <h1>Quanto é 1.000 + 1.000? </h1>
+          <h1>Quanto é 28 / 4? </h1>
           <form class="modal-resposta">
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Resposta:</label>
@@ -64,15 +64,15 @@
         </h3>
         <form class="form-chekagem">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+            <input class="form-check-input" type="radio" name="question2" id="option1" value="option1" onchange="saveAnswer('question2', 'option1')">
             <label class="form-check-label" for="option1">Banana</label>
           </div>  
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+            <input class="form-check-input" type="radio" name="question2" id="option2" value="option2" onchange="saveAnswer('question2', 'option2')">
             <label class="form-check-label" for="option2">Maçã</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
+            <input class="form-check-input" type="radio" name="question2" id="option3" value="option3" onchange="saveAnswer('question2', 'option3')">
             <label class="form-check-label" for="option3">Laranja</label>
           </div>
         </form>
@@ -82,7 +82,7 @@
 
   <div class="botoes">
     <a href="../../menu.html" class="btn btn-danger">Voltar</a>
-    <a href="../ingles/prova_ingles2.html" class="btn btn-success">Avançar</a>
+    <a href="../ingles/prova_ingles2.html" class="btn btn-success" onclick="submitQuiz()">Avançar</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -91,7 +91,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
+  <script src="../../js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -101,7 +101,7 @@
       const resposta = document.getElementById('message-text').value.trim();
       console.log('Resposta:', resposta);
   
-      if (resposta === "2000") { // Verifica se a resposta está correta
+      if (resposta === "7") { // Verifica se a resposta está correta
         // Encontra e risca a alternativa incorreta
         const incorrectOption = document.getElementById('option1');
         const incorrectLabel = incorrectOption.nextElementSibling;
@@ -119,7 +119,6 @@
     });
   });
   </script>
-  
 </body>
 
 </html>

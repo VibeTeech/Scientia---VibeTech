@@ -36,7 +36,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <h1>Quanto é 1.000 + 1.000? </h1>
+          <h1>Quanto é 2.050 + 1.500? </h1>
           <form class="modal-resposta">
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Resposta:</label>
@@ -63,17 +63,17 @@
           <span class="card-title rounded-circle d-inline-flex">1</span>
           Como se fala carro em inglês?
         </h3>
-        <form class="form-chekagem">
+        <form class="form-chekagem" id="quiz1-form">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1">
+            <input class="form-check-input" type="radio" name="question1" id="option1" value="option1" onchange="saveAnswer('question1', 'option1')">
             <label class="form-check-label" for="option1">Auto</label>
           </div>  
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2">
+            <input class="form-check-input" type="radio" name="question1" id="option2" value="option2" onchange="saveAnswer('question1', 'option2')">
             <label class="form-check-label" for="option2">Car</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3">
+            <input class="form-check-input" type="radio" name="question1" id="option3" value="option3" onchange="saveAnswer('question1', 'option3')">
             <label class="form-check-label" for="option3">Mba'yruguata</label>
           </div>
         </form>
@@ -83,7 +83,7 @@
 
   <div class="botoes">
     <a href="../../menu.html" class="btn btn-danger">Voltar</a>
-    <a href="../ingles/prova_ingles1.html" class="btn btn-success">Avançar</a>
+    <a href="../ingles/prova_ingles1.html" class="btn btn-success" onclick="submitQuiz()">Avançar</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -92,7 +92,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
+  <script src="../../js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -102,9 +102,9 @@
       const resposta = document.getElementById('message-text').value.trim();
       console.log('Resposta:', resposta);
   
-      if (resposta === "2000") { // Verifica se a resposta está correta
+      if (resposta === "3550") { // Verifica se a resposta está correta
         // Encontra e risca a alternativa incorreta
-        const incorrectOption = document.getElementById('option1');
+        const incorrectOption = document.getElementById('option3');
         const incorrectLabel = incorrectOption.nextElementSibling;
   
         incorrectOption.disabled = true;
@@ -120,7 +120,6 @@
     });
   });
   </script>
-  
 </body>
 
 </html>
